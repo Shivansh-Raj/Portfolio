@@ -1,0 +1,110 @@
+/* Navbar CSS */
+
+  .navbar {
+    z-index: 999;
+    /* position: fixed; */
+    transition: 0.5 ease-in-out;
+  }
+  
+  .nav-link, .navbar-brand  {
+    color: #fff !important;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover, .navbar-brand:hover::after {
+    text-shadow: 0 0 8px #00ffea, 0 0 15px #00ffea, 0 0 20px #00ffea;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+  
+  .nav-link.active {
+    opacity:100%;
+    color: #fc00ce !important;
+    align-items: center;
+    text-shadow: 0 0 8px #fc00ce, 0 0 15px #fc00ce, 0 0 20px #fc00ce;
+    
+  }
+  .navbar.scrolled {
+    top:0;
+    left: 0;
+    width: 100%;;
+    position: fixed;
+    margin: 0;
+    padding: 20px 0 ;
+    background-color: #121212;
+  }
+  .socialLink{
+    position: relative;
+    margin: 0.25vw;  
+    height: 7vh;
+    width: 7vh; 
+    border: solid;
+    border-radius: 50%;
+  }
+  .socialLink img{
+    justify-content: center;
+    align-items: center;
+    padding: 1.75vh;  
+  }
+  .socialLink::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(90deg, #fc00ce, #00dbde);
+    background-size: 200% 100%;
+    animation: gradientAnimation 3s ease-in infinite;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+    cursor: pointer;
+  } 
+  .socialLink:hover::before {
+    transform: scale(1);
+  } 
+  
+  .socialLink img::before {
+    content: "";
+    position: relative;
+    background-color: #000000;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+  }
+  .socialLink img:hover::before {
+    transform: scale(1);
+  }
+  .connect-btn{
+    width : max(200px,18vw);
+    position: relative;
+    overflow:hidden !important;
+  }
+  .connect-btn button{
+    width: 100%;
+    border-radius: 5%;
+    padding: 1.8vh 2.5vw;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .animated-bg::before {
+    border-radius: 5%;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #fc00ce, #00dbde);
+    background-size: 200% 100%;
+    animation: gradientAnimation 3s ease-in infinite;
+    /* transform: scale(0); */
+    transition: width 0.55s ease-in-out;
+    z-index: -1;
+  }
+  .animated-bg:hover::before {
+    width: 100%;
+  
+  }

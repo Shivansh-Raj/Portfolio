@@ -1,0 +1,76 @@
+.banner-container {
+    padding: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/img/home-img4.jpg');
+    background-position: top center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.banner-text {
+    color: #f0f0f0;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.banner-text .welcome-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fc00ce;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.banner-text .dynamic-text {
+    font-size: 1.8rem;
+    color: #00dbde;
+}
+
+.banner-img {
+    /* text-align: right; */
+    padding: 20px;
+}
+
+
+.about-me-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fc00ce;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.about-me-btn:hover {
+    background-color: #00dbde;
+}
+
+/* Glowing Text Animation */
+
+.banner-img img {
+    /* margin-left: 50% ; */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Effect Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,60 @@
+.social-media-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-btn {
+    background-color: #282c34;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .social-btn:hover {
+    background-color: #00dbde;
+    box-shadow: 0 0 10px #00dbde, 0 0 20px #fc00ce;
+  }
+  
+  .connect-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fc00ce;
+    color: #fff;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .connect-content {
+    text-align: center;
+  }
+  
+  .close-btn {
+    background: #fc00ce;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

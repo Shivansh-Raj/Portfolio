@@ -1,0 +1,31 @@
+.skill {
+    padding: 20px;
+    text-align: center; /* Center text in the section */
+  }
+  .skill p {
+    padding: 0 10% 0 10%;
+    text-wrap:wrap;
+  }
+  
+  .custom-carousel {
+    display: flex;
+    justify-content: center; /* Center the carousel items horizontally */
+    align-items: center; /* Center items vertically if necessary */
+    width: 70vw;
+    overflow-x: auto; /* Allows horizontal scrolling if items overflow */
+    overflow: hidden; /* Hides vertical scrollbar */
+    padding: 10px;
+    margin: 0 auto; /* Center the carousel itself within the parent */
+  }
+  
+  .custom-carousel-item {
+    flex: 0 0 auto; /* Prevents items from shrinking or growing */
+    margin: 0 2.5vw; /* Adjust space between items */
+    text-align: center; /* Center text within each carousel item */
+  }
+  
+  .custom-carousel-item img {
+    height: 20vh; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+  

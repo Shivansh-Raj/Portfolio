@@ -1,0 +1,128 @@
+.project-section {
+    align-items: center;
+    padding: 100px 0 ;
+}
+.project-heading {
+    padding-bottom: 50px;
+}
+.project-inner {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    padding: 10vh 2.5%;
+}
+.project-inner h4 {margin-left: auto;
+}
+
+.project-inner img {
+    width: 30vw;    
+    margin: auto;
+    z-index: 990;
+}
+.project-item:hover {
+    background: 
+      url("../assets/img/static_tv.gif") repeat; /* Static GIF background */
+    background-size: cover;
+    position: relative;
+}
+
+.hover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+.hover-box {
+    position: relative;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hover-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    bottom: 100%; /* Position above the box */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hover-box:hover .hover-image {
+    opacity: 1;
+    transform: translate(-50%, -10px); /* Floating effect */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-0%, -10px) ;
+    }
+    50% {
+        transform: translate(-0%, -20px);
+    }
+    100% {
+        transform: translate(-0%, -10px);
+    }
+}
+
+
+/* TEMP CSS */
+
+.project-inner {
+    position: relative;
+    padding: 10vh 20px;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.image-container {
+    position: absolute;
+    /* bottom: -200%;  */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 100%; /* Make the image container take full width */
+    display: flex;
+    justify-content: center;
+}
+.image-container img {
+    /* max-height: 50px; */
+
+}
+.project-inner img {
+    display: none;
+    max-width: 20vw; /* Control the size of the image */
+    transition: transform 0.4s ease, bottom 0.4s ease; /* Smooth transition effect */
+}
+.project-inner:hover{
+    padding: 10vh 40px;
+}
+.project-inner:hover .image-container {
+    z-index: 990;
+    bottom: -10%; /* Slide the image up to be fully visible */
+}
+
+.project-inner:hover img {
+    display: flex;
+    box-shadow: 0 0 20px rgba(255, 102, 227, 0.5), 0 0 20px rgba(251, 140, 255, 0.5), 0 0 20px rgba(252, 0, 206, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: slidein 1s ease-in 1; /* Add a small hover effect, making the image float above the div */
+    /* animation: float 3s ease-in-out infinite; */
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateY(20%) scaleY(1.1); /* Start compressed and offscreen */
+    }
+    100% {
+        transform: translateY(0%) scaleY(1); /* Full size and on screen */
+    }
+}
+
