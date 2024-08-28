@@ -76,6 +76,10 @@
   .socialLink img:hover::before {
     transform: scale(1);
   }
+  .navbar-toggler-icon img{
+    height: 20px;
+  }
+  
   .connect-btn{
     width : max(200px,18vw);
     position: relative;
