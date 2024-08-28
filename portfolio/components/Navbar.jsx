@@ -6,6 +6,7 @@ import "../styles/navbar.css"
 import navicon1 from "../assets/img/nav-icon1.svg"
 import navicon2 from "../assets/img/telegram.png"
 import navicon3 from "../assets/img/nav-icon3.svg"
+import dropDown from "../assets/img/dropdown.png"
 
 function Navbar() {
   const [activelink, setActivelink] = useState('home');
@@ -31,7 +32,7 @@ function Navbar() {
         <div className="container-fluid">
             <h4 className="nav-item" href="#">CYBERPUNK</h4>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"><img src={navicon1}/></span>
+            <span className="navbar-toggler-icon"><img src={dropDown}/></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
