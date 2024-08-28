@@ -2,7 +2,7 @@ import React from 'react'
 import Cyberline from './Cyberline'
 import "../styles/project.css"
 import projectImg1 from "../assets/img/dQuora.png"
-import projectImg2 from "../assets/img/Handtracking_mouse.png"
+import projectImg2 from "../assets/img/handtracking_mouse.png"
 import projectImg3 from "../assets/img/typing_tester.png"
 function Projects() {
     const projects = [
