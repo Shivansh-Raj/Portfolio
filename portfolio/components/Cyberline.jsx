@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import "../styles/cyberline.css";
+import "../styles/cyberLine.css";
 
 function Cyberline() {
   const lineref = useRef(null);
