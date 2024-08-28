@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 import Skills from '../components/Skills'
 import Cyberline from '../components/Cyberline'
 import Projects from '../components/Projects'
-import Contact from '../components/contact'
+import Contact from '../components/Contact'
 import AboutMe from '../components/AboutMe'
 import SocialMedia from '../components/SocialMedia'
 function App() {
